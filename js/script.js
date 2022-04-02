@@ -43,10 +43,12 @@ const cats = [
 ];
 
 function catNames(list) {
-    for(catIndex = 0; catIndex < cats.length; catIndex++) {
-        let list = cats[catIndex].name;
+    for(catIndex = 0; catIndex < list.length; catIndex++) {
+        let catName = list[catIndex].name;
+        console.log(catName)
     }
     
 };
 
 catNames(cats);
+
