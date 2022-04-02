@@ -45,9 +45,8 @@ const cats = [
 function catNames(list) {
     for(catIndex = 0; catIndex < list.length; catIndex++) {
         let catName = list[catIndex].name;
-        console.log(catName)
-    }
-    
+        console.log(catName);
+    } 
 };
 
 catNames(cats);
