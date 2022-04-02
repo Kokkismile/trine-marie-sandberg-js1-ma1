@@ -51,3 +51,16 @@ function catNames(list) {
 
 catNames(cats);
 
+//Question 8
+const catContainer = document.querySelector(".cat-container");
+let createHtml;
+
+function createCats(cats) {
+    for(i = 0; i < cats.length; i++) {
+        createHtml += `<div><h5>${cats[i].name}</h5></div>`
+    }
+};
+
+createCats(cats);
+
+catContainer.innerHTML = createHtml;
