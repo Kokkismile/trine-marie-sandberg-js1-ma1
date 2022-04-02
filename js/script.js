@@ -53,11 +53,11 @@ catNames(cats);
 
 //Question 8
 const catContainer = document.querySelector(".cat-container");
-let createHtml;
+let createHtml = "";
 
 function createCats(cats) {
     for(i = 0; i < cats.length; i++) {
-        if(typeof(cats[i].age) === 'undefined') {
+        if(typeof(cats[i].age) === "undefined") {
             console.log(cats[i].age = "Age unknown");
         };
 
