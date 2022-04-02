@@ -16,13 +16,18 @@ heading.style.fontSize = "2em";
 heading.classList.add("subheading");
 
 //Question 5
-let paragraphs = document.querySelectorAll("p");
+const paragraphs = document.querySelectorAll("p");
 for(pIndex = 0; pIndex < paragraphs.length; pIndex++) {
     paragraphs[pIndex].style.color = "red";
 };
 
-console.log(paragraphs)
+//Question 6
+const resultContainer = document.querySelector(".results");
 
+resultContainer.innerHTML = `<p>New paragraph</p>`;
+resultContainer.style.backgroundColor = "yellow";
+
+//Question 7
 const cats = [
     {
         name: "Blob",
@@ -36,3 +41,12 @@ const cats = [
         age: 21
     }
 ];
+
+function catNames(list) {
+    for(catIndex = 0; catIndex < cats.length; catIndex++) {
+        let list = cats[catIndex].name;
+    }
+    
+};
+
+catNames(cats);
