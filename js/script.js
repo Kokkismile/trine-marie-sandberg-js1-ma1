@@ -57,11 +57,17 @@ let createHtml;
 
 function createCats(cats) {
     for(i = 0; i < cats.length; i++) {
+        if(typeof(cats[i].age) === 'undefined') {
+            console.log(cats[i].age = "Age unknown");
+        };
+
         createHtml += `<div>
                            <h5>${cats[i].name}</h5>
                            <p>${cats[i].age}</p>
                         </div>`;
-    }
+    };
+
+    return createHtml;
 };
 
 createCats(cats);
